@@ -19,7 +19,7 @@ function do_healthCheck()
     local proj=`echo $chk_project | awk -F'-' '{print $1}'`
     local child=`echo $chk_project | awk -F'-' '{print $2}'`
 
-    # find the script in "01_ioc\01_ioc\government\10_25_13_11"
+    # find the script in "01_ioc\01_ioc\government\10_250_143_11"
     pro_chk_file=`find ${CURR_PATH}/${proj}/${child}/${net_area}/${svrIP} -maxdepth 1 -type f -name "${item}\.*"`
     fn_recordLog "INFO" "cmd: find ${CURR_PATH}/${proj}/${child}/${net_area}/${svrIP} -maxdepth 1 -type f -name '${item}\.*', pro_chk_file=${pro_chk_file}"
     if [ 'x' == "x${pro_chk_file}" ];then

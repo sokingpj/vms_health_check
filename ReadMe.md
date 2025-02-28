@@ -1,4 +1,4 @@
-# 这是用于巡检虚拟机状态、配置、日志、关键程序状态、获取关键日志、虚拟机日志、登录信息等的一系列工具脚本
+# 这是智慧城市用于巡检虚拟机状态、配置、日志、关键程序状态、获取关键日志、虚拟机日志、登录信息等的一系列工具脚本
 
 ### 使用方法：
 Example: python health_check.py --operate "check" --svrType "x86" --freq "daily" --area interior

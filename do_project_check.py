@@ -383,7 +383,7 @@ class Do_Project_Check():
                 if 'user' not in v.keys():
                     self.chk_failed_svrs.append(ipStr)
                     continue
-                if ipStr in ['10_25_13_244','10_25_13_245','10_25_13_155','172_21_57_41','172_21_57_47','172_21_57_48',]:
+                if ipStr in ['10_250_143_244','10_250_143_245','10_250_143_155','172_21_57_41','172_21_57_47','172_21_57_48',]:
                     continue
                 user = v['user']
                 pwdTmp = v['pwd']

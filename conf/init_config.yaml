@@ -1,0 +1,102 @@
+check_items:
+  os: 
+    os:
+      group_pwd_shadow: {'check_freq': ['biweekly', 'monthly'], "chinese_name": '系统用户配置文件'}
+      etc_hostinfo: {'check_freq': ['biweekly', 'monthly'], "chinese_name": '主机名配置'}
+      etc_sys_nics_ifcfg: {'check_freq': ['monthly'], "chinese_name": '网卡配置文件'}
+      os_nics_ip: {'check_freq': ['daily', 'biweekly', 'monthly'], "chinese_name": 'os网络地址'}
+      etc_selinux_service: {'check_freq': ['monthly'], "chinese_name": 'selinux配置文件以及服务端口号'}
+      disk_usage: {'check_freq': ['daily', 'biweekly', 'monthly'], "chinese_name": '磁盘挂载以及利用率'}
+      cpu_usage: {'check_freq': ['daily', 'biweekly', 'monthly'], "chinese_name": 'cpu利用率'}
+      mem_usage: {'check_freq': ['daily', 'biweekly', 'monthly'], "chinese_name": 'memroy利用率'}
+      os_sysctl: {'check_freq': ['biweekly', 'monthly'], "chinese_name": '内核参数'}
+      var_log_boot: {'check_freq': ['daily', 'biweekly', 'monthly'], "chinese_name": 'os启动日志'}
+      var_log_cron: {'check_freq': ['daily', 'biweekly', 'monthly'], "chinese_name": 'os定时任务'}
+      os_last: {'check_freq': ['daily', 'biweekly', 'monthly'], "chinese_name": '系统登录以及重启记录'}
+  db:
+    mysql:
+      etc_my_cnf: {'chinese_name': 'mysql配置文件', 'check_freq': ['monthly']}
+      uptime_con_sessions: {'chinese_name': 'mysql启动时间', 'check_freq': ['daily', 'biweekly', 'monthly']}
+      qcache_hits_insert_delete_update: {'chinese_name': '数据库变更记录', 'check_freq': ['daily', 'biweekly', 'monthly']}
+      show_variables_and_expire: {'chinese_name': '数据库过期', 'check_freq': ['daily', 'biweekly', 'monthly']}
+      show_conn_status: {'chinese_name': 'mysql主要数据库', 'check_freq': ['biweekly', 'monthly']}
+      show_tables: {'chinese_name': 'mysql主要数据库表', 'check_freq': ['biweekly', 'monthly']}
+      master_slavbe_status: {'chinese_name': 'mysql主库状态', 'check_freq': ['daily', 'biweekly', 'monthly']}
+      log_mysqlerror: {'chinese_name': 'mysql错误日志', 'check_freq': ['daily', 'biweekly', 'monthly']}
+      log_slow: {'chinese_name': 'mysql慢日志', 'check_freq': ['daily', 'biweekly', 'monthly']}
+      db_disk_status: {'chinese_name': '数据磁盘占用率', 'check_freq': ['daily', 'biweekly', 'monthly']}
+      db_version: {'chinese_name': '数据库版本', 'check_freq': ['monthly']}
+  app:
+    java:
+      conf_folder_status: {'chinese_name': 'java配置目录状态', 'check_freq': ['biweekly', 'monthly']}
+      conf_status: {'chinese_name': 'java应用配置文件', 'check_freq': ['biweekly', 'monthly']}
+      process_status: {'chinese_name': '应用进程状态', 'check_freq': ['daily', 'biweekly', 'monthly']}
+      process_log: {'chinese_name': '应用日志状态', 'check_freq': ['daily', 'biweekly', 'monthly']}
+    nginx:
+      conf_folder_status: {'chinese_name': '配置目录状态', 'check_freq': ['biweekly', 'monthly']}
+      conf_status: {'chinese_name': 'nginx配置文件', 'check_freq': ['daily', 'biweekly', 'monthly']}
+      process_status: {'chinese_name': 'nginx进程状态', 'check_freq': ['daily', 'biweekly', 'monthly']}
+      process_log: {'chinese_name': 'nginx日志状态', 'check_freq': ['daily', 'biweekly', 'monthly']}
+    docker: 
+      container_status: {'chinese_name': '查询容器运行状态', 'check_freq': ['daily', 'biweekly', 'monthly']}
+    rabbitmq:
+      container_status: {'chinese_name': 'rabbitmq容器查询', 'check_freq': ['daily', 'biweekly', 'monthly']}
+      container_status: {'chinese_name': 'rabbitmq健康状态', 'check_freq': ['daily', 'biweekly', 'monthly']}
+projects:
+  01_ioc:
+    01_ioc:
+      name: 'ioc-运行综合管理中心'
+      interior: {}
+      exterior: {}
+  02_digital_twins: 
+    01_digital_twins:
+      name: '数字孪生'
+      interior: {}
+      exterior: {}
+  03_urban_brain: 
+    01_auth:
+      name: '统一认证'
+      interior: {}
+      exterior: {}
+    02_app_base:
+      name: '应用底座'
+      interior: {}
+      exterior: {}
+    03_industrial_economics:
+      name: '产业经济'
+      interior: {}
+      exterior: {}
+    04_data_hub:
+      name: '数据中枢'
+      interior: {}
+      exterior: {}
+    05_traffic:
+      name: '交通场景'
+      interior: {}
+      exterior: {}
+    06_onekey_escorts:
+      name: '一键护航'
+      interior: {}
+      exterior: {}
+    07_city_app:
+      name: '城市app'
+      interior: {}
+      exterior: {}
+    08_city_security:
+      name: '城市安全'
+      interior: {}
+      exterior: {}
+    09_ai_platform:
+      name: 'ai中台'
+      interior: {}
+      exterior: {}
+  04_shared_exchange:
+    01_shared_exchange:
+      name: '共享交换平台'
+      interior: {}
+      exterior: {}
+    02_big_data:
+      name: '大数据'
+      interior: {}
+      exterior: {}
+    

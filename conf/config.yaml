@@ -1,0 +1,200 @@
+check_items:
+  app:
+    docker:
+      container_status:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: 查询容器运行状态
+    java:
+      conf_folder_status:
+        check_freq:
+        - biweekly
+        - monthly
+        chinese_name: java配置目录状态
+      conf_status:
+        check_freq:
+        - biweekly
+        - monthly
+        chinese_name: java应用配置文件
+      process_log:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: 应用日志状态
+      process_status:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: 应用进程状态
+    nginx:
+      conf_folder_status:
+        check_freq:
+        - biweekly
+        - monthly
+        chinese_name: 配置目录状态
+      conf_status:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: nginx配置文件
+      process_log:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: nginx日志状态
+      process_status:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: nginx进程状态
+    rabbitmq:
+      container_status:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: rabbitmq健康状态
+  db:
+    mysql:
+      db_disk_status:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: 数据磁盘占用率
+      db_version:
+        check_freq:
+        - monthly
+        chinese_name: 数据库版本
+      etc_my_cnf:
+        check_freq:
+        - monthly
+        chinese_name: mysql配置文件
+      log_mysqlerror:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: mysql错误日志
+      log_slow:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: mysql慢日志
+      master_slavbe_status:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: mysql主库状态
+      qcache_hits_insert_delete_update:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: 数据库变更记录
+      show_conn_status:
+        check_freq:
+        - biweekly
+        - monthly
+        chinese_name: mysql主要数据库
+      show_tables:
+        check_freq:
+        - biweekly
+        - monthly
+        chinese_name: mysql主要数据库表
+      show_variables_and_expire:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: 数据库过期
+      uptime_con_sessions:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: mysql启动时间
+  os:
+    os:
+      cpu_usage:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: cpu利用率
+      disk_usage:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: 磁盘挂载以及利用率
+      etc_hostinfo:
+        check_freq:
+        - biweekly
+        - monthly
+        chinese_name: 主机名配置
+      etc_selinux_service:
+        check_freq:
+        - monthly
+        chinese_name: selinux配置文件以及服务端口号
+      etc_sys_nics_ifcfg:
+        check_freq:
+        - monthly
+        chinese_name: 网卡配置文件
+      group_pwd_shadow:
+        check_freq:
+        - biweekly
+        - monthly
+        chinese_name: 系统用户配置文件
+      mem_usage:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: memroy利用率
+      os_last:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: 系统登录以及重启记录
+      os_nics_ip:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: os网络地址
+      os_sysctl:
+        check_freq:
+        - biweekly
+        - monthly
+        chinese_name: 内核参数
+      var_log_boot:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: os启动日志
+      var_log_cron:
+        check_freq:
+        - daily
+        - biweekly
+        - monthly
+        chinese_name: os定时任务
+projects:
+  01_ioc:
+    01_ioc:
+      government:
+        '10.250.143_100':
+          name: BPM应用
+          pwd: root
+          user: root

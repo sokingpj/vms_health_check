@@ -1,0 +1,34 @@
+execute_time                                                | 20230220143549
+check_project                                               | 01_ioc-01_ioc
+correlation_servers                                         | 10.250.143.244,10.250.143.245,172.21.57.11,172.21.57.12
+healthCheckRST                                              | /home/healthCheck/health_checkRst_20230220143549.tgz
+net_area                                                    | government
+Health_Check_Item                                           | Check Result
+Check_Failed_servers                                        |           
+app_docker_container_status                                 | NotCheck  
+app_java_process_log                                        | NotCheck  
+app_java_process_status                                     | NotCheck  
+app_nginx_conf_status                                       | NotCheck  
+app_nginx_process_log                                       | NotCheck  
+app_nginx_process_status                                    | NotCheck  
+app_rabbitmq_container_status                               | NotCheck  
+database_mysql_db_disk_status                               | NotCheck  
+database_mysql_global_status_like_sessions                  | NotCheck  
+database_mysql_global_status_like_uptime                    | NotCheck  
+database_mysql_log_mysqlerror                               | NotCheck  
+database_mysql_log_slow                                     | NotCheck  
+database_mysql_master_status                                | NotCheck  
+database_mysql_qcache_hits_com_insert_com_delete_com_update | NotCheck  
+database_mysql_qcache_hits_or_com_select                    | NotCheck  
+database_mysql_show_global_status                           | NotCheck  
+database_mysql_show_variables                               | NotCheck  
+database_mysql_show_variables_expire                        | NotCheck  
+database_mysql_slave_status                                 | NotCheck  
+database_mysql_status_like_qcache                           | NotCheck  
+os_os_cpu_usage                                             | NotCheck  
+os_os_disk_usage                                            | NotCheck  
+os_os_mem_usage                                             | NotCheck  
+os_os_os_last                                               | NotCheck  
+os_os_os_nics_ip                                            | NotCheck  
+os_os_var_log_boot                                          | NotCheck  
+os_os_var_log_cron                                          | NotCheck  
